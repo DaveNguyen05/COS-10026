@@ -1,0 +1,354 @@
+/*
+filename: DGD
+author: DGD
+created: 27/08/2023
+last modified: 09/09/2023
+description: [html files it refers to lan04]
+*/
+
+/* index css */
+
+header {
+    position: relative;
+    z-index: 3;
+    background-color: #e2e6e8;
+    background-size: cover;
+}
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+.heading img {
+   margin-right: 10px;
+}
+  
+.heading h1 {
+    flex: 1;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    margin-right: 17%;
+}
+
+.menubar {
+    max-width: 100%;
+    background-color: #1d262d;
+    overflow: auto;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.menubar a {
+    float:left;
+    padding: 24px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    width: 15%;
+    text-align: center;
+}
+
+.menubar a:hover {
+    color: white;
+    background-color: #424e58;
+    transition: 0.5s;
+}
+
+#youtubeButton  {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    max-width: 50%;
+    max-height: 50%;
+}
+
+.bg-image {
+    height: 100vh; /* Use viewport height to fill the entire screen */
+
+    /* Center and scale the background image */
+    background-image: url("./images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+    /* Apply the blur effect to the element */
+    filter: blur(8px); /* Apply the blur effect */
+    position: fixed; /* Fix the element to the viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 90%;
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+    overflow: auto;
+    padding-top: 20px;
+    min-height: 100px;
+}
+
+
+footer {
+    z-index: 3;
+}
+
+.footer_contact{
+    float: left;
+}
+
+.footer_txt{
+    float: right;
+}
+  
+/* apply css */
+
+fieldset    {
+    width: 25%;
+    margin-left: 36%;
+}
+
+label   {
+    display: block;
+    float: left;
+    clear: left;
+}
+
+input, select   {
+    display: block;
+    float: left;
+    width: 150px;
+}
+
+form    {
+    display: inline;
+    
+}
+
+#state-dropdown {
+    margin: 10px 0 0 0;
+    padding-top: 20%;
+}
+
+#comments{
+    padding-top: 20%;
+}
+
+#buttons{
+    padding-top: 10%;
+    margin-left: 10%;
+}
+
+/* about css */
+
+
+body    {
+    padding:10px;
+    padding-bottom:60px;
+}
+
+.about-header   {
+    margin-top: 90px;
+    position: relative;
+    text-align: center;
+}
+
+.about-definition-description-list  {
+    position: relative;
+    margin-top: 5%;
+    width: 40%;
+}
+
+dl  {
+    display: grid;
+    grid-template-columns: 200px repeat(auto-fill, 200px) 300px;
+    margin-bottom:100px;
+    border: 1px solid#000;
+}
+
+dt  {
+    float: left;
+    clear: left;
+    margin-right: 5px;
+    font-weight: bold;
+    width: 10%;
+    grid-column-start: 1;
+}
+
+dd  {
+    margin-left: 0px;
+    grid-column-start: 2;
+
+}
+
+dt::after   {
+    content: ":";
+}
+
+#group-image   { 
+    position: absolute;
+    margin-bottom: 30%;
+    margin-left: 110%;
+    border: #e7473c;
+    border-style: solid;
+    width: 95%;
+}
+
+#group-image:hover {
+    animation: rotation 40s infinite linear;
+}
+
+
+@keyframes rotation {
+    from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(359deg);
+    }
+}
+
+#about-timetable-container  {
+    position: absolute;
+    margin-left: 25%;
+
+}
+
+table.Timetable    {
+    width: 50%;
+    background-color: whitesmoke;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: #f6f6f6;
+    border-style: dashed;
+    color: #000000;
+}
+  
+table.Timetable td, table.Timetable th    {
+    border-width: 1px;
+    border-color: black;
+    border-style: dashed;
+    padding: 3px;
+}
+  
+table.Timetable thead  {
+    background-color: #e7473c;
+}
+
+#mon930{
+    position: absolute;
+    height: 8%;
+    width: 15%;
+}
+
+#mon1230{
+    position: absolute;
+    height: 9%;
+    width: 15%;
+}
+
+
+#mon230{
+    position: absolute;
+    height: 13%;
+    width: 15%;
+}
+
+#tue430{
+    position: absolute;
+    height: 5%;
+    width: 15%;
+}
+
+#fri830{
+    position: absolute;
+    height: 5%;
+    width: 16%;
+}
+
+#fri930{
+    position: absolute;
+    height: 15%;
+    width: 16%;
+    margin-top: 10px;
+}
+
+#fri230{
+    position: absolute;
+    height: 9%;
+    width: 16%;
+}
+
+/* enhancements css */
+
+.enhancement1{
+    position: absolute;
+    width: 50%;
+    margin-top: 10%;
+}
+
+.enhancement2{
+    position: absolute;
+    width: 50%;
+    margin-left: 50%;
+    margin-top: 10%;
+}
+
+/* jobs css */
+
+aside {
+    border: 2px solid #353535;
+    width: 25%;
+    padding-left: 40px;
+    margin-right: 20%;
+    float: right;
+    font-family: 'Lato', sans-serif;
+    background-color: #818384;
+}
+ 
+.left{
+    border: 2px solid #353535;
+    width: 25%;
+    padding-left: 40px;
+    margin-right: 1%;
+    float: right;
+    font-family: 'Lato', sans-serif;
+    background-color: #818384;
+}
+
+#jobs-title {
+    margin-left: 5%;   
+}
+
+.Job_heading {
+    font-variant: small-caps;
+    font-family: 'Lato', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    
+}
+
+.Job_desc {
+    flex: 1;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.Job_code {
+    display: inline;
+    margin-right: 40px;
+}
